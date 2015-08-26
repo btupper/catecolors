@@ -5,7 +5,7 @@
 #' Glasbey, Chris, et al. "Colour displays for categorical images." 
 #' Color Research & Application 32.4 (2007): 304-309.
 #' 
-#' Here is an implementation in ImageJ by Gabrial Landini 
+#' Here is an implementation in ImageJ by Gabriel Landini 
 #' \url{http://www.dentistry.bham.ac.uk/landinig/software/software.html}
 #'
 #' @name glasbey-package
