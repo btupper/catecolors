@@ -26,3 +26,5 @@ library(glasbey)
 plot(1:10, pch = 19, col = glasbey(11:20), cex = 3)
 show_glasbey()
 ```
+
+![image](https://github.com/btupper/glasbey/blob/master/inst/glasbey.png)
