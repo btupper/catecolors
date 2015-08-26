@@ -35,15 +35,17 @@ show_glasbey <- function(label = TRUE){
    x <- x[nrow(x):1, ]
    rasterImage(x, 1,1,17,17, interpolate = FALSE)
    if (label){
-      col <- matrix(glasbey()[c(256, 1:255)], nrow = 16, ncol = 16, byrow = TRUE)
-      col <- col[nrow(col):1, ]
+      col <- glasbey()[c(256, 1:255)]
+      #col <- col[nrow(col):1, ]
       y <- 1:16
       text.cex <- 0.8
-      for (i in 1:16) {
-         text(i + 0.5 , y + 0.5, i*y, col = col[i,y], cex = text.cex, adj = c(0.5, 0.5)) 
-      }
+      txt <- 1:256
+      x <- rep(1:16, time = 16)
+      y <- rep(1:16, each = 16)
+      text(x + 0.5 , y + 0.5, txt, col = col, cex = text.cex, adj = c(0.5, 0.5)) 
    } else {
       text(.25, 1:16 + 0.5, seq(from = 1, to = 256, by = 16))
+      text(16.25, 1:16 + 0.5, seq(from = 16, to = 256, by = 16))
    }
    invisible(NULL)
 }
