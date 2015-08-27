@@ -1,9 +1,10 @@
-#' Retrieve one or more color specifications as hex, rgb triplets or a data.frame
+#' Retrieve one or more of Glasbey et al 256 color specifications as 
+#' hex, rgb triplets or a data.frame
 #'
 #'
 #' @export
 #' @param index a vector of indices to retrieve if missing then all 256 are returned
-#' @param form character specifies return type as 'hex', 'rgb' or 'data.frame'
+#' @param ... further arguments for \code{\link{get_lut}}
 #' @return color values in the form specified
 #' \describe{
 #'    \item{hex}{a character vector of hexidecimal strings, this is the default}
@@ -12,25 +13,19 @@
 #' }
 #' @examples
 #'   plot(1:10, pch = 19, col = glasbey(11:20))
-glasbey <- function(index, form = c("hex", "rgb", "data.frame")[1]){
-   
+glasbey <- function(index, ...){
   if (missing(index)) index <- seq_len(nrow(GLASBEYLUT))
-   
-   switch( tolower(form[1]),
-      'hex' = GLASBEYLUT[index,'hex'],
-      'rgb' = as.matrix(GLASBEYLUT[index,c('red', 'green', 'blue')]),
-      GLASBEYLUT[index,]
-   )
+  get_lut(GLASBEYLUT, index, ...)
 }
 
 
-#' Show the colors in a palette view
+#' Show the Glasbey et al colors in a palette view
 #'
 #' @export
 #' @param label logical, if TRUE then label each color with it's number
 show_glasbey <- function(label = TRUE){
    x <- matrix(glasbey(), nrow = 16, ncol = 16, byrow = TRUE)
-   plot(0:18, 0:18, typ = 'n', axes = FALSE, xlab = '', ylab = '', main = 'Glasbey Color Table')
+   plot(0:18, 0:18, typ = 'n', axes = FALSE, xlab = '', ylab = '', main = 'Glasbey 256-Color Table')
    x <- as.raster(x)
    x <- x[nrow(x):1, ]
    rasterImage(x, 1,1,17,17, interpolate = FALSE)

@@ -2,14 +2,15 @@
 % Please edit documentation in R/glasbey.R
 \name{glasbey}
 \alias{glasbey}
-\title{Retrieve one or more color specifications as hex, rgb triplets or a data.frame}
+\title{Retrieve one or more of Glasbey et al 256 color specifications as
+hex, rgb triplets or a data.frame}
 \usage{
-glasbey(index, form = c("hex", "rgb", "data.frame")[1])
+glasbey(index, ...)
 }
 \arguments{
 \item{index}{a vector of indices to retrieve if missing then all 256 are returned}
 
-\item{form}{character specifies return type as 'hex', 'rgb' or 'data.frame'}
+\item{...}{further arguments for \code{\link{get_lut}}}
 }
 \value{
 color values in the form specified
@@ -20,7 +21,8 @@ color values in the form specified
 }
 }
 \description{
-Retrieve one or more color specifications as hex, rgb triplets or a data.frame
+Retrieve one or more of Glasbey et al 256 color specifications as
+hex, rgb triplets or a data.frame
 }
 \examples{
 plot(1:10, pch = 19, col = glasbey(11:20))

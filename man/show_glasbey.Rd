@@ -2,7 +2,7 @@
 % Please edit documentation in R/glasbey.R
 \name{show_glasbey}
 \alias{show_glasbey}
-\title{Show the colors in a palette view}
+\title{Show the Glasbey et al colors in a palette view}
 \usage{
 show_glasbey(label = TRUE)
 }
@@ -10,6 +10,6 @@ show_glasbey(label = TRUE)
 \item{label}{logical, if TRUE then label each color with it's number}
 }
 \description{
-Show the colors in a palette view
+Show the Glasbey et al colors in a palette view
 }
 
