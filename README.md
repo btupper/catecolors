@@ -1,11 +1,11 @@
-# catacolors
+# catecolors
 
-Color tables gleaned from various sources that are suitable for displaying catagorical (qualitative) colors.
+Color tables gleaned from various sources that are suitable for displaying categorical (qualitative) colors.
 
 
 ### Color tables included
 
-+ Glasbey: (GLASBEYLUT) Discrete 256-color table devised by Glasbey et al suitable for catagorical coloring.
++ Glasbey: (GLASBEYLUT) Discrete 256-color table devised by Glasbey et al suitable for categorical coloring.
 
 + Watlington: (WADLUT) JA Watlington (Wad's) Optimum 16 color palette
 
@@ -24,13 +24,13 @@ Color tables gleaned from various sources that are suitable for displaying catag
 
 + Also see ImageJ [wiki](http://imagej.net/Glasbey)
 
-![image](https://github.com/btupper/catacolors/blob/master/inst/glasbey.png)
+![image](https://github.com/btupper/catecolors/blob/master/inst/glasbey.png)
 
 ##### Watlington (WADLUT)
 
 + Watlington's personal [webpage](http://alumni.media.mit.edu/~wad/color/palette.html)
 
-![image](https://github.com/btupper/catacolors/blob/master/inst/watlington.png)   
+![image](https://github.com/btupper/catecolors/blob/master/inst/watlington.png)   
  
 ##### Kelly (KELLYLUT)
     
@@ -40,7 +40,7 @@ Color tables gleaned from various sources that are suitable for displaying catag
     
 + A [post](http://stackoverflow.com/questions/470690/how-to-automatically-generate-n-distinct-colors) by Ohad Schneider
 
-![image](https://github.com/btupper/catacolors/blob/master/inst/kelly.png)
+![image](https://github.com/btupper/catecolors/blob/master/inst/kelly.png)
 
 ##### Boynton (BOYNTONLUT)
 
@@ -48,7 +48,7 @@ Color tables gleaned from various sources that are suitable for displaying catag
 
 + A [post](http://stackoverflow.com/questions/470690/how-to-automatically-generate-n-distinct-colors) by Ohad Schneider
 
-![image](https://github.com/btupper/catacolors/blob/master/inst/boynton.png)
+![image](https://github.com/btupper/catecolors/blob/master/inst/boynton.png)
 
 ### Installation
 
@@ -56,13 +56,13 @@ It's fairly easy to install using Hadley Wickham's [devtools](http://cran.r-proj
 
 ```r
 library(devtools)
-install_github('btupper/catacolors')
+install_github('btupper/catecolors')
 ```
 
 ### Usage
 
 ```r
-library(catacolors)
+library(catecolors)
 plot(1:10, pch = 19, col = glasbey(11:20), cex = 3)
 show_glasbey()
 ```

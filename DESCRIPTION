@@ -1,12 +1,12 @@
-Package: catacolors
+Package: catecolors
 Type: Package
-Title: Color tables for displaying catagorical data
+Title: Color tables for displaying categorical data
 Version: 0.1
 Date: 2015-08-26
 Author: Ben Tupper
 Maintainer: Ben Tupper <btupper@bigelow.org>
-https://github.com/btupper/catacolors
-Description: Color tables for displaying catagorical data including Glasbey's (256 colors), Wad's (16 colors), Kelly's (22 colors) and Boynton's (11 colors)
+https://github.com/btupper/catecolors
+Description: Color tables for displaying categorical data including Glasbey's (256 colors), Wad's (16 colors), Kelly's (22 colors) and Boynton's (11 colors)
 License: GPL (>= 2)
 LazyData: yes
 Depends:

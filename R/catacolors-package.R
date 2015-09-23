@@ -1,9 +1,9 @@
-# catacolors-package.R
+# catecolors-package.R
 
 
-#' Color tables for displaying catagorical data including Glasbey's (256 colors), Wad's (16 colors), Kelly's (22 colors) and Boynton's (11 colors)
+#' Color tables for displaying categorical data including Glasbey's (256 colors), Wad's (16 colors), Kelly's (22 colors) and Boynton's (11 colors)
 #'
-#' @name catacolors
+#' @name catecolors
 #' @docType package
 NULL
 
